@@ -1,0 +1,27 @@
+---
+title: Blackwell Approachability and No-Regret Learning are Equivalent
+abstract: 'We consider the celebrated Blackwell Approachability Theorem for two-player
+  games with vector payoffs. Blackwell himself previously showed that the theorem
+  implies the existence of a ``no-regret'''' algorithm for a simple online learning
+  problem. We show that this relationship is in fact much stronger, that Blackwell''s
+  result is equivalent to, in a very strong sense, the problem of regret minimization
+  for Online Linear Optimization. We show that any algorithm for one such problem
+  can be efficiently converted into an algorithm for the other. We provide one novel
+  application of this reduction: the first \emph{efficient} algorithm for calibrated
+  forecasting.'
+pdf: "./abernethy11b/abernethy11b.pdf"
+layout: inproceedings
+key: abernethy11b
+month: 0
+firstpage: 27
+lastpage: 46
+origpdf: http://jmlr.org/proceedings/papers/v19/abernethy11b/abernethy11b.pdf
+sections: 
+authors:
+- given: Jacob
+  family: Abernethy
+- given: Peter L.
+  family: Bartlett
+- given: Elad
+  family: Hazan
+---

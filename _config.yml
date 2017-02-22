@@ -1,0 +1,36 @@
+# Site settings
+# Auto generated from v19.bib
+---
+booktitle: Proceedings of the 24th Annual Conference on Learning Theory
+publisher: JMLR Workshop and Conference Proceedings
+volume: 19
+month: 0
+address: Budapest, Hungary
+year: '2011'
+shortname: COLT
+sections:
+- name: preface
+  title: Preface
+- name: default
+  title: Accepted Papers
+layout: proceedings
+key: KakadeCOLT2011
+abstract: 
+origpdf: 
+pdf: "./KakadeCOLT2011/KakadeCOLT2011.pdf"
+editors:
+- given: Sham M.
+  family: Kakade
+- given: Ulrike
+  family: "{von Luxburg}"
+title: Proceedings of the 24th Annual Conference on Learning Theory
+conference: Proceedings of the 24th Annual Conference on Learning Theory
+email: ''
+description: Proceedings of the 24th Annual Conference on Learning Theory, Budapest,
+  Hungary
+url: http://proceedings.mlr.press
+baseurl: "/v19"
+twitter_username: mlresearch
+github_username: mlresearch
+markdown: kramdown
+permalink: "/:title.html"

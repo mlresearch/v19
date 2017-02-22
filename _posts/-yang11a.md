@@ -1,0 +1,32 @@
+---
+title: Identifiability of Priors from Bounded Sample Sizes  with Applications to Transfer
+  Learning
+abstract: We explore a transfer learning setting, in which a finite sequence of target
+  concepts are sampled independently with an unknown distribution from a known family.We
+  study the total number of labeled examples required to learn all targets to an arbitrary
+  specified expected accuracy, focusing on the asymptotics in the number of tasks
+  and the desired accuracy.  Our primary interest is formally understanding the fundamental
+  benefits of transfer learning, compared to learning each target independently from
+  the others.Our approach to the transfer problem is general, in the sense that it
+  can be used with a variety of learning protocols.  The key insight driving our approach
+  is that the distribution of the target concepts is identifiable from the joint distribution
+  over a number of random labeled data points equal the Vapnik-Chervonenkis dimension
+  of the concept space.  This is not necessarily the case for the joint distribution
+  over any smaller number of points.This work has particularly interesting implications
+  when applied to active learning methods.
+pdf: "./yang11a/yang11a.pdf"
+layout: inproceedings
+key: yang11a
+month: 0
+firstpage: 789
+lastpage: 806
+origpdf: http://jmlr.org/proceedings/papers/v19/yang11a/yang11a.pdf
+sections: 
+authors:
+- given: Liu
+  family: Yang
+- given: Steve
+  family: Hanneke
+- given: Jaime
+  family: Carbonell
+---

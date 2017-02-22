@@ -1,0 +1,27 @@
+---
+title: Optimal aggregation of affine estimators
+abstract: We consider  the problem of combining  a (possibly uncountably infinite)
+  set of affine estimators innon-parametric regression model with heteroscedastic
+  Gaussian noise. Focusing on the exponentially weighted aggregate,  we prove a PAC-Bayesian
+  type inequality that leadsto sharp oracle inequalities in discrete but also in continuous
+  settings. The framework is general enough to cover the combinations of various procedures
+  such asleast square regression, kernel ridge regression, shrinking estimators and
+  many other estimators used in the literature on statistical inverse problems. As
+  aconsequence, we show that the proposed aggregateprovides an adaptive estimator
+  in the exact minimax sense without neither discretizing the range of tuningparameters
+  nor splitting the set of observations. We also illustrate numerically the good performance
+  achievedby the exponentially weighted aggregate.
+pdf: "./salmon11a/salmon11a.pdf"
+layout: inproceedings
+key: salmon11a
+month: 0
+firstpage: 635
+lastpage: 660
+origpdf: http://jmlr.org/proceedings/papers/v19/salmon11a/salmon11a.pdf
+sections: 
+authors:
+- given: Joseph
+  family: Salmon
+- given: Arnak
+  family: Dalalyan
+---

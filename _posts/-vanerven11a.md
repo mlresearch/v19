@@ -1,0 +1,29 @@
+---
+title: Mixability is Bayes Risk Curvature Relative to Log Loss
+abstract: "Mixability of a loss governs the best possible performance when\taggregating
+  expert predictions with respect to that loss. The\tdetermination of the mixability
+  constant for binary losses is\tstraightforward but opaque. In the binary case we
+  make this \ttransparent and simpler by\tcharacterising mixability in terms of the
+  second derivative of the\tBayes risk of proper losses.  We then extend this result
+  to\tmulticlass proper losses where there are few existing results.  We\tshow that
+  mixability is governed by the Hessian of the Bayes risk,\trelative to the Hessian
+  of the Bayes risk for log loss. We\tconclude by comparing our result to other work
+  that bounds\tprediction performance in terms of the geometry of the Bayes risk.\tAlthough
+  all calculations are for proper losses, we also show how\tto carry the results across
+  to improper losses."
+pdf: "./vanerven11a/vanerven11a.pdf"
+layout: inproceedings
+key: vanerven11a
+month: 0
+firstpage: 233
+lastpage: 252
+origpdf: http://jmlr.org/proceedings/papers/v19/vanerven11a/vanerven11a.pdf
+sections: 
+authors:
+- given: Tim
+  family: Erven
+- given: Mark D.
+  family: Reid
+- given: Robert C.
+  family: Williamson
+---

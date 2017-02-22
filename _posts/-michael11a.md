@@ -1,0 +1,18 @@
+---
+title: Missing Information Impediments to Learnability
+abstract: To what extent is learnability impeded when information is missing in learning
+  instances? We present relevant known results and concrete open problems, in the
+  context of a natural extension of the PAC learning model that accounts for arbitrarily
+  missing information.
+pdf: "./michael11a/michael11a.pdf"
+layout: inproceedings
+key: michael11a
+month: 0
+firstpage: 825
+lastpage: 828
+origpdf: http://jmlr.org/proceedings/papers/v19/michael11a/michael11a.pdf
+sections: 
+authors:
+- given: Loizos
+  family: Michael
+---
