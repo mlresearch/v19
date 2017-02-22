@@ -1,380 +1,57 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+---
+layout: default
+---
 
-<link rel="alternate" type="application/rss+xml" 
-href="http://www.jmlr.org/jmlr.xml" title="JMLR RSS">
-<link rel="stylesheet" type="text/css" href="basic_files/style.html">
-<style>. {font-family:verdana,helvetica,sans-serif}
-a {text-decoration:none;color:#3030a0}
-</style>
-<style type="text/css">
-<!-- 
-#fixed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 8em;
-    height: 100%;
-}
-body > #fixed {
-    position: fixed;
-}
-#content {
-    margin-top: 1em;
-    margin-left: 10em;
-    margin-right: 0.5em;
-}
-img.jmlr {
-    width: 7em;
-}
-img.rss {
-    width: 2em;
-}
--->
-</style>
-<script language="JavaScript"> 
-<!-- function GoAddress(user,machine) {
-document.location = 'mailto:' + user + '@' + machine; } 
-// -->
-</script>
+<div id="content" class="home">
 
-<title>JMLR W&amp;CP: Volume 19: COLT 2011</title></head>
+  <h1>Proceedings of Machine Learning Research</h1>
+  <h2>Volume {{ site.volume }}: {{ site.conference }} {{ site.start | date: "%B %-d" }} to {{ site.end | date: "%B %-d, %Y" }}, {{ site.address }}</h2>
 
-<body>
+  
+  <p><strong>Editors:
+      {% assign lastone = site.editor | last %}
+      {% for person in site.editor %}
+      {% include listperson.html %}
+      {% endfor %}
+  </strong></p>
 
-<div id="fixed">
-<br>
-<a align="right" href="http://www.jmlr.org/" target="_top"><img 
-class="jmlr" src="http://jmlr.csail.mit.edu/jmlr.jpg" align="right" border="0"></a> 
-<p><br><br>
-</p><p align="right"> <a href="http://www.jmlr.org/"> Home Page </a> 
+  <div id="sectionnav">
+    {% if site.sections %}
+    <p>Contents:</p>
+    <ul>
+      {% for section in site.sections %}
+      <li><a href="#{{ section.name }}">{{ section.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <label for="search-authors">Filter Authors:</label>
+    <input type="search" name="filter-authors" id="search-authors" value />
+    <label for="search-titles">Filter Titles:</label>
+    <input type="search" name="filter-titles" id="search-titles" value />
+  </div>
+  {% if site.sections %}
+  {% for section in site.sections %}
+  <h3 id="{{ section.name }}">{{ section.title }}</h3>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+    {% if section.name == post.section %}
+    {% include listpaper.html %}
+    {% endif %}
+    {% endfor %}
+  </dl>
+  {% endfor %}
+  {% endif %}
+  <dl>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+  {% unless post.section %} 
+  {% include listpaper.html %}
+  {% endunless %}
+  {% endfor %}
 
-</p><p align="right"> <a href="http://jmlr.csail.mit.edu/papers"> Papers
- </a> 
-
-</p><p align="right"> <a 
-href="http://jmlr.csail.mit.edu/author-info.html"> Submissions </a> 
-
-</p><p align="right"> <a href="http://jmlr.csail.mit.edu/news.html"> 
-News </a> 
-
-</p><p align="right"> <a href="http://jmlr.csail.mit.edu/scope.html"> 
-Scope </a>
-
-</p><p align="right"> <a 
-href="http://jmlr.csail.mit.edu/editorial-board.html"> Editorial Board </a>
- 
-
-</p><p align="right"> <a 
-href="http://jmlr.csail.mit.edu/announcements.html"> Announcements </a>
-
-</p><p align="right"> <a href="http://jmlr.csail.mit.edu/proceedings"> 
-Proceedings </a>
-
-</p><p align="right"> <a href="http://jmlr.csail.mit.edu/mloss">Open 
-Source Software</a>
-
-</p><p align="right"> <a 
-href="http://jmlr.csail.mit.edu/search-jmlr.html"> Search </a>
-
-</p><p align="right"> <a href="http://jmlr.csail.mit.edu/manudb"> Login </a></p>
-
-<br><br>
-<p align="right"> <a href="http://jmlr.csail.mit.edu/jmlr.xml"> 
-<img src="http://jmlr.csail.mit.edu/RSS.gif" class="rss" alt="RSS Feed">
-</a>
-
-</p></div>
-
-
-
-<div id="content">
-
-<table>
-<tbody><tr><td><h1>JMLR Workshop and Conference Proceedings<br/>
-Volume 19: COLT 2011</h1></td></tr>
-</tbody>
-</table>
-
-
-<h2>Proceedings of the 24th Annual Conference on Learning Theory
-<br/>June 9-11, 2011, Budapest, Hungary</h2>
-<b>Editors: Sham M. Kakade and Ulrike von Luxburg</b>
-<br/>
-
-<table cellpadding="4" cellspacing="0">
-<tbody>
-
-<tr><td><dl>
-<dt>Preface</dt>
-<dd><b><i>Sham M. Kakade and Ulrike von Luxburg</i></b><br/>
-<a href="./kakade11a/kakade11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-
-<tr><td><dl>
-<dt>Regret Bounds for the Adaptive Control of Linear Quadratic Systems</dt>
-<dd><b><i>Yasin Abbasi-Yadkori, Csaba Szepesv&aacute;ri</i></b> ; 19:1-26, 2011.<br/>
-<a href="./abbasi-yadkori11a.html">[abs]</a>
-<a href="./abbasi-yadkori11a/abbasi-yadkori11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Blackwell Approachability and No-Regret Learning are Equivalent</dt>
-<dd><b><i>Jacob Abernethy, Peter L. Bartlett, Elad Hazan</i></b> ; 19:27-46, 2011.<br/>
-<a href="./abernethy11b.html">[abs]</a>
-<a href="./abernethy11b/abernethy11b.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Competitive Closeness Testing</dt>
-<dd><b><i>Jayadev Acharya, Hirakendu Das, Ashkan Jafarpour, Alon Orlitsky, Shengjun Pan</i></b> ; 19:47-68, 2011.<br/>
-<a href="./acharya11a.html">[abs]</a>
-<a href="./acharya11a/acharya11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Oracle inequalities for computationally budgeted model selection</dt>
-<dd><b><i>Alekh Agarwal, John C. Duchi, Peter L. Bartlett, Clement Levrard</i></b> ; 19:69-86, 2011.<br/>
-<a href="./agarwal11a.html">[abs]</a>
-<a href="./agarwal11a/agarwal11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Bandits, Query Learning, and the Haystack Dimension</dt>
-<dd><b><i>Kareem Amin, Michael Kearns, Umar Syed</i></b> ; 19:87-106, 2011.<br/>
-<a href="./amin11a.html">[abs]</a>
-<a href="./amin11a/amin11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Minimax Policies for Combinatorial Prediction Games</dt>
-<dd><b><i>Jean-Yves Audibert, S&eacute;bastien Bubeck, G&aacute;bor Lugosi</i></b> ; 19:107-132, 2011.<br/>
-<a href="./audibert11a.html">[abs]</a>
-<a href="./audibert11a/audibert11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Minimax Regret of Finite Partial-Monitoring Games in Stochastic Environments</dt>
-<dd><b><i>G&aacute;bor Bart&oacute;k, D&aacute;vid P&aacute;l, Csaba Szepesv&aacute;ri</i></b> ; 19:133-154, 2011.<br/>
-<a href="./bartok11a.html">[abs]</a>
-<a href="./bartok11a/bartok11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Sample Complexity Bounds for Differentially Private Learning</dt>
-<dd><b><i>Kamalika Chaudhuri, Daniel Hsu</i></b> ; 19:155-186, 2011.<br/>
-<a href="./chaudhuri11a.html">[abs]</a>
-<a href="./chaudhuri11a/chaudhuri11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Tight conditions for consistent variable selection in high dimensional nonparametric regression</dt>
-<dd><b><i>La&euml;titia Comminges, Arnak S. Dalalyan</i></b> ; 19:187-206, 2011.<br/>
-<a href="./comminges11a.html">[abs]</a>
-<a href="./comminges11a/comminges11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Multiclass Learnability and the ERM principle</dt>
-<dd><b><i>Amit Daniely, Sivan Sabato, Shai Ben-David, Shai Shalev-Shwartz</i></b> ; 19:207-232, 2011.<br/>
-<a href="./daniely11a.html">[abs]</a>
-<a href="./daniely11a/daniely11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Mixability is Bayes Risk Curvature Relative to Log Loss</dt>
-<dd><b><i>Tim van Erven, Mark D. Reid, Robert C. Williamson</i></b> ; 19:233-252, 2011.<br/>
-<a href="./vanerven11a.html">[abs]</a>
-<a href="./vanerven11a/vanerven11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Distribution-Independent Evolvability of Linear Threshold Functions</dt>
-<dd><b><i>Vitaly Feldman</i></b> ; 19:253-272, 2011.<br/>
-<a href="./feldman11b.html">[abs]</a>
-<a href="./feldman11b/feldman11b.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Lower Bounds and Hardness Amplification for Learning Shallow Monotone Formulas</dt>
-<dd><b><i>Vitaly Feldman, Homin K. Lee, Rocco A. Servedio</i></b> ; 19:273-292, 2011.<br/>
-<a href="./feldman11a.html">[abs]</a>
-<a href="./feldman11a/feldman11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Complexity-Based Approach to Calibration with Checking Rules</dt>
-<dd><b><i>Dean P. Foster, Alexander Rakhlin, Karthik Sridharan, Ambuj Tewari</i></b> ; 19:293-314, 2011.<br/>
-<a href="./foster11a.html">[abs]</a>
-<a href="./foster11a/foster11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Concentration-Based Guarantees  for Low-Rank Matrix Reconstruction</dt>
-<dd><b><i>Rina Foygel, Nathan Srebro</i></b> ; 19:315-340, 2011.<br/>
-<a href="./foygel11a.html">[abs]</a>
-<a href="./foygel11a/foygel11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>On the Consistency of Multi-Label Learning</dt>
-<dd><b><i>Wei Gao, Zhi-Hua Zhou</i></b> ; 19:341-358, 2011.<br/>
-<a href="./gao11a.html">[abs]</a>
-<a href="./gao11a/gao11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>The KL-UCB Algorithm for Bounded Stochastic Bandits and Beyond</dt>
-<dd><b><i>Aur&eacute;lien Garivier, Olivier Capp&eacute;</i></b> ; 19:359-376, 2011.<br/>
-<a href="./garivier11a.html">[abs]</a>
-<a href="./garivier11a/garivier11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Sparsity Regret Bounds for Individual Sequences in Online Linear Regression</dt>
-<dd><b><i>S&eacute;bastien Gerchinovitz</i></b> ; 19:377-396, 2011.<br/>
-<a href="./gerchinovitz11a.html">[abs]</a>
-<a href="./gerchinovitz11a/gerchinovitz11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Safe Learning:    bridging the gap between Bayes, MDL and statistical learning theory via  empirical convexity</dt>
-<dd><b><i>Peter Gr&uuml;nwald</i></b> ; 19:397-420, 2011.<br/>
-<a href="./grunwald11a.html">[abs]</a>
-<a href="./grunwald11a/grunwald11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Beyond the regret minimization barrier: an optimal algorithm for stochastic strongly-convex optimization</dt>
-<dd><b><i>Elad Hazan, Satyen Kale</i></b> ; 19:421-436, 2011.<br/>
-<a href="./hazan11a.html">[abs]</a>
-<a href="./hazan11a/hazan11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>A Close Look to Margin Complexity and Related Parameters</dt>
-<dd><b><i>Michael Kallweit, Hans Ulrich Simon</i></b> ; 19:437-456, 2011.<br/>
-<a href="./kallweit11a.html">[abs]</a>
-<a href="./kallweit11a/kallweit11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Maximum Likelihood vs. Sequential Normalized Maximum Likelihood  in On-line Density Estimation</dt>
-<dd><b><i>Wojciech Kot&#322;owski, Peter Gr&uuml;nwald</i></b> ; 19:457-476, 2011.<br/>
-<a href="./kotlowski11a.html">[abs]</a>
-<a href="./kotlowski11a/kotlowski11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>A New Algorithm for Compressed Counting with Applications in Shannon Entropy Estimation in Dynamic Data</dt>
-<dd><b><i>Ping Li, Cun-Hui Zhang</i></b> ; 19:477-496, 2011.<br/>
-<a href="./li11a.html">[abs]</a>
-<a href="./li11a/li11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>A Finite-Time Analysis of Multi-armed Bandits Problems with Kullback-Leibler Divergences</dt>
-<dd><b><i>Odalric-Ambrym Maillard, R&eacute;mi Munos, Gilles Stoltz</i></b> ; 19:497-514, 2011.<br/>
-<a href="./maillard11a.html">[abs]</a>
-<a href="./maillard11a/maillard11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Robust approachability and regret minimization in games with partial monitoring</dt>
-<dd><b><i>Shie Mannor, Vianney Perchet, Gilles Stoltz</i></b> ; 19:515-536, 2011.<br/>
-<a href="./mannor11a.html">[abs]</a>
-<a href="./mannor11a/mannor11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>The Rate of Convergence of Adaboost</dt>
-<dd><b><i>Indraneel Mukherjee, Cynthia Rudin, Robert E. Schapire</i></b> ; 19:537-558, 2011.<br/>
-<a href="./mukherjee11a.html">[abs]</a>
-<a href="./mukherjee11a/mukherjee11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Online Learning: Beyond Regret</dt>
-<dd><b><i>Alexander Rakhlin, Karthik Sridharan, Ambuj Tewari</i></b> ; 19:559-594, 2011.<br/>
-<a href="./rakhlin11a.html">[abs]</a>
-<a href="./rakhlin11a/rakhlin11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Neyman-Pearson classification under a strict constraint</dt>
-<dd><b><i>Philippe Rigollet, Xin Tong</i></b> ; 19:595-614, 2011.<br/>
-<a href="./rigollet11a.html">[abs]</a>
-<a href="./rigollet11a/rigollet11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Sequential Event Prediction with Association Rules</dt>
-<dd><b><i>Cynthia Rudin, Benjamin Letham, Ansaf Salleb-Aouissi, Eugene Kogan, David Madigan</i></b> ; 19:615-634, 2011.<br/>
-<a href="./rudin11a.html">[abs]</a>
-<a href="./rudin11a/rudin11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Optimal aggregation of affine estimators</dt>
-<dd><b><i>Joseph Salmon, Arnak Dalalyan</i></b> ; 19:635-660, 2011.<br/>
-<a href="./salmon11a.html">[abs]</a>
-<a href="./salmon11a/salmon11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Collaborative Filtering with the Trace Norm: Learning, Bounding, and Transducing</dt>
-<dd><b><i>Ohad Shamir, Shai Shalev-Shwartz</i></b> ; 19:661-678, 2011.<br/>
-<a href="./shamir11a.html">[abs]</a>
-<a href="./shamir11a/shamir11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Contextual Bandits with Similarity Information</dt>
-<dd><b><i>Aleksandrs Slivkins</i></b> ; 19:679-702, 2011.<br/>
-<a href="./slivkins11a.html">[abs]</a>
-<a href="./slivkins11a/slivkins11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Adaptive Density Level Set Clustering</dt>
-<dd><b><i>Ingo Steinwart</i></b> ; 19:703-738, 2011.<br/>
-<a href="./steinwart11a.html">[abs]</a>
-<a href="./steinwart11a/steinwart11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Agnostic KWIK learning and efficient approximate reinforcement learning</dt>
-<dd><b><i>Istv&aacute;n Szita, Csaba Szepesv&aacute;ri</i></b> ; 19:739-772, 2011.<br/>
-<a href="./szita11a.html">[abs]</a>
-<a href="./szita11a/szita11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>The Sample Complexity of Dictionary Learning</dt>
-<dd><b><i>Daniel Vainsencher, Shie Mannor, Alfred M. Bruckstein</i></b> ; 19:773-790, 2011.<br/>
-<a href="./vainsencher11a.html">[abs]</a>
-<a href="./vainsencher11a/vainsencher11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Identifiability of Priors from Bounded Sample Sizes  with Applications to Transfer Learning</dt>
-<dd><b><i>Liu Yang, Steve Hanneke, Jaime Carbonell</i></b> ; 19:791-808, 2011.<br/>
-<a href="./yang11a.html">[abs]</a>
-<a href="./yang11a/yang11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-
-</tbody>
-</table>
-<h3>Open problems</h3>
-<table cellpadding="4" cellspacing="0">
-<tbody>
-<tr><td><dl>
-<dt>Does an Efficient Calibrated Forecasting Strategy Exist?</dt>
-<dd><b><i>Jacob Abernethy, Shie Mannor</i></b> ; 19:811-814, 2011.<br/>
-<a href="./abernethy11a.html">[abs]</a>
-<a href="./abernethy11a/abernethy11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Bounds on Individual Risk for Log-loss Predictors</dt>
-<dd><b><i>Peter D. Gr&uuml;nwald, Wojciech Kot&#322;owski</i></b> ; 19:815-818, 2011.<br/>
-<a href="./grunwald11b.html">[abs]</a>
-<a href="./grunwald11b/grunwald11b.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>A simple multi-armed bandit algorithm with optimal variation-bounded regret</dt>
-<dd><b><i>Elad Hazan, Satyen Kale</i></b> ; 19:819-822, 2011.<br/>
-<a href="./hazan11b.html">[abs]</a>
-<a href="./hazan11b/hazan11b.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Minimax Algorithm for Learning Rotations</dt>
-<dd><b><i>Wojciech Kot&#322;owski, Manfred K. Warmuth</i></b> ; 19:823-826, 2011.<br/>
-<a href="./kotlowski11b.html">[abs]</a>
-<a href="./kotlowski11b/kotlowski11b.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Missing Information Impediments to Learnability</dt>
-<dd><b><i>Loizos Michael</i></b> ; 19:827-830, 2011.<br/>
-<a href="./michael11a.html">[abs]</a>
-<a href="./michael11a/michael11a.pdf">[pdf]</a>
-</dd></dl></td></tr>
-<tr><td><dl>
-<dt>Monotone multi-armed bandit allocations</dt>
-<dd><b><i>Aleksandrs Slivkins</i></b> ; 19:831-836, 2011.<br/>
-<a href="./slivkins11b.html">[abs]</a>
-<a href="./slivkins11b/slivkins11b.pdf">[pdf]</a>
-</dd></dl></td></tr>
-
-
-</tbody>
-</table>
-
-<hr>
-  <center>Page last modified on Wed Feb 15 12:01 CET 2012.</center>
-
-</div></body></html>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+</div>
+<!-- Search Widget -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/search.js"></script>

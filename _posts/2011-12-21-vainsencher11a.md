@@ -24,17 +24,20 @@ abstract: A large set of signals can sometimes be described sparsely using a dic
   setting using kernels with weak smoothness requirements.
 pdf: "./vainsencher11a/vainsencher11a.pdf"
 layout: inproceedings
-key: vainsencher11a
+id: vainsencher11a
 month: 0
 firstpage: 773
 lastpage: 788
+page: 773-788
 origpdf: http://jmlr.org/proceedings/papers/v19/vainsencher11a/vainsencher11a.pdf
 sections: 
-authors:
+author:
 - given: Daniel
   family: Vainsencher
 - given: Shie
   family: Mannor
 - given: Alfred M.
   family: Bruckstein
+date: '2011-12-21 00:12:53'
+publisher: PMLR
 ---

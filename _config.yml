@@ -17,11 +17,11 @@ sections:
 - name: default
   title: Accepted Papers
 layout: proceedings
-key: KakadeCOLT2011
+id: KakadeCOLT2011
 abstract: 
 origpdf: 
 pdf: "./KakadeCOLT2011/KakadeCOLT2011.pdf"
-editors:
+editor:
 - given: Sham M.
   family: Kakade
 - given: Ulrike
