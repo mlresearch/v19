@@ -1,0 +1,27 @@
+---
+title: Tight conditions for consistent variable selection in high dimensional nonparametric
+  regression
+abstract: We address the issue of variable selection in the regression model with
+  very high ambient dimension, \textit{i.e.}, when the number of covariates is very
+  large. The main focus is on the situation where the number of relevant covariates,
+  called intrinsic dimension, is much smaller than the ambient dimension. Without
+  assuming any parametric form of the underlying regression function, we get tight
+  conditions making it possible to consistently estimate the set of relevant variables.
+  These conditions relate the intrinsic dimension to the ambient dimension and to
+  the sample size.  The procedure that is provably consistent under these tight conditions
+  is simple and is based on comparing the empirical Fourier coefficients with an appropriately
+  chosen threshold value.
+pdf: "./comminges11a/comminges11a.pdf"
+layout: inproceedings
+key: comminges11a
+month: 0
+firstpage: 187
+lastpage: 206
+origpdf: http://jmlr.org/proceedings/papers/v19/comminges11a/comminges11a.pdf
+sections: 
+authors:
+- given: Laëtitia
+  family: Comminges
+- given: Arnak S.
+  family: Dalalyan
+---

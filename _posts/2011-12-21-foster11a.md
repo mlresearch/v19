@@ -1,0 +1,27 @@
+---
+title: Complexity-Based Approach to Calibration with Checking Rules
+abstract: We consider the problem of forecasting a sequence of outcomes from an unknown
+  source. The quality of the forecaster is measured by a family of checking rules.
+  We prove upper bounds on the value of the associated game, thus certifying the existence
+  of a calibrated strategy for the forecaster. We show that complexity of the family
+  of checking rules can be captured by the notion of a sequential cover introduced
+  in \citep{RakSriTew10a}. Various natural assumptions on the class of checking rules
+  are considered, including finiteness of Vapnik-Chervonenkis and Littlestone's dimensions.
+pdf: "./foster11a/foster11a.pdf"
+layout: inproceedings
+key: foster11a
+month: 0
+firstpage: 293
+lastpage: 314
+origpdf: http://jmlr.org/proceedings/papers/v19/foster11a/foster11a.pdf
+sections: 
+authors:
+- given: Dean P.
+  family: Foster
+- given: Alexander
+  family: Rakhlin
+- given: Karthik
+  family: Sridharan
+- given: Ambuj
+  family: Tewari
+---

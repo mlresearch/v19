@@ -1,0 +1,27 @@
+---
+title: 'Collaborative Filtering with the Trace Norm: Learning, Bounding, and Transducing'
+abstract: Trace-norm regularization is a widely-used and successful approach for collaborative
+  filtering and matrix completion. However, its theoretical understanding is surprisingly
+  weak, and despite previous attempts, there are no distribution-free, non-trivial
+  learning guarantees currently known. In this paper, we bridge this gap by providing
+  such guarantees, under mild assumptions which correspond to collaborative filtering
+  as performed in practice. In fact, we claim that previous difficulties partially
+  stemmed from a mismatch betweenthe standard learning-theoretic modeling of collaborative
+  filtering, and its practical application. Our results also shed some light on the
+  issue of collaborative filtering with bounded models, which enforce predictions
+  to lie within a certain range. In particular, we provide experimental and theoretical
+  evidence that such models lead to a modest yet significant improvement.
+pdf: "./shamir11a/shamir11a.pdf"
+layout: inproceedings
+key: shamir11a
+month: 0
+firstpage: 661
+lastpage: 678
+origpdf: http://jmlr.org/proceedings/papers/v19/shamir11a/shamir11a.pdf
+sections: 
+authors:
+- given: Ohad
+  family: Shamir
+- given: Shai
+  family: Shalev-Shwartz
+---

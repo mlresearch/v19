@@ -1,0 +1,40 @@
+---
+title: Sample Complexity Bounds for Differentially Private Learning
+abstract: 'This work studies the problem of privacy-preserving classification -- namely,
+  learning a classifier from sensitive data while preserving the privacy ofindividuals
+  in the training set.In particular, the learning algorithm is required in this problem
+  toguarantee differential privacy, a very strong notion of privacy that hasgained
+  significant attention in recent years.A natural question to ask is: what is the
+  sample requirement of a learningalgorithm that guarantees a certain level of privacy
+  and accuracy?We address this question in the context of learning with infinite hypothesis
+  classes whenthe data is drawn from a continuous distribution.We first show that
+  even for very simple hypothesis classes, any algorithmthat uses a finite number
+  of examples and guarantees differential privacymust fail to return an accurate classifier
+  for at least some unlabeled datadistributions.This result is unlike the case with
+  either finite hypothesis classes ordiscrete data domains, in which distribution-free
+  private learning ispossible, as previously shown by \citet{KLNRS08}.We then consider
+  two approaches to differentially private learning that get around this lower bound.The
+  first approach is to use prior knowledge about the unlabeled data distribution in
+  the form of a reference distribution $\U$ chosen independently of the sensitive
+  data. Given such a reference $\U$, we provide an upper bound on the sample requirement
+  that depends (among other things) on a measure of closenessbetween $\U$ and the
+  unlabeled data distribution. Our upper bound appliesto the non-realizable as well
+  as the realizable case. The second approachis to relax the privacy requirement,
+  by requiring only label-privacy --namely, that the only labels (and not the unlabeled
+  parts of the examples)be considered sensitive information. An upper bound on the
+  samplerequirement of learning with label privacy was shown by \citet{CDKMT06}; inthis
+  work, we show a lower bound.'
+pdf: "./chaudhuri11a/chaudhuri11a.pdf"
+layout: inproceedings
+key: chaudhuri11a
+month: 0
+firstpage: 155
+lastpage: 186
+origpdf: http://jmlr.org/proceedings/papers/v19/chaudhuri11a/chaudhuri11a.pdf
+sections: 
+authors:
+- given: Kamalika
+  family: Chaudhuri
+- given: Daniel
+  family: Hsu
+---

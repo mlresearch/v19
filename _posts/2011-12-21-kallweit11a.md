@@ -1,0 +1,23 @@
+---
+title: A Close Look to Margin Complexity and Related Parameters
+abstract: Concept classes can canonically be represented by sign-matrices,i.e., by
+  matrices with entries $1$ and $-1$. The question whethera sign-matrix (concept class)
+  $A$ can be learned by a machine that performs large margin classification is closely
+  related to the``margin complexity'' associated with $A$. We consider severalvariants
+  of margin complexity, reveal how they are relatedto each other, and we reveal how
+  they are related to other notions of learning-theoretic relevance like SQ-dimension,
+  CSQ-dimension,and the Forster bound.
+pdf: "./kallweit11a/kallweit11a.pdf"
+layout: inproceedings
+key: kallweit11a
+month: 0
+firstpage: 437
+lastpage: 456
+origpdf: http://jmlr.org/proceedings/papers/v19/kallweit11a/kallweit11a.pdf
+sections: 
+authors:
+- given: Michael
+  family: Kallweit
+- given: Hans Ulrich
+  family: Simon
+---

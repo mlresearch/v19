@@ -1,0 +1,29 @@
+---
+title: Minimax Regret of Finite Partial-Monitoring Games in Stochastic Environments
+abstract: In a partial monitoring game, the learner repeatedly chooses an action,
+  theenvironment responds with an outcome, and then the learner suffers a loss andreceives
+  a feedback signal, both of which are fixed functions of the action andthe outcome.
+  The goal of the learner is to minimize his regret, which is thedifference between
+  his total cumulative loss and the total loss of the bestfixed action in hindsight.Assuming
+  that the outcomes are generated in an i.i.d. fashion from an arbitrary andunknown
+  probability distribution, we characterize the minimax regret of anypartial monitoring
+  game with finitely many actions andoutcomes. It turns out that the minimax regret
+  of any such game is either zero,$\widetilde{\Theta}(\sqrt{T})$, $\Theta(T^{2/3})$,
+  or $\Theta(T)$. We provide a computationally efficient learningalgorithm that achieves
+  the minimax regret within logarithmic factor for any game.
+pdf: "./bartok11a/bartok11a.pdf"
+layout: inproceedings
+key: bartok11a
+month: 0
+firstpage: 133
+lastpage: 154
+origpdf: http://jmlr.org/proceedings/papers/v19/bartok11a/bartok11a.pdf
+sections: 
+authors:
+- given: Gábor
+  family: Bartók
+- given: Dávid
+  family: Pál
+- given: Csaba
+  family: Szepesvári
+---
