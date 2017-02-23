@@ -11,20 +11,20 @@ abstract: We study the average cost Linear Quadratic (LQ) control problem with u
   the proposed algorithm.To the best of our knowledge this is the the first time that
   a regret bound is derived for the LQ control problem. %(That O(\sqrtT) is a minimax
   optimal rate follows from the existing lower bounds for linear bandit problems.)
-pdf: http://proceedings.pmlr.press/abbasi-yadkori11a/abbasi-yadkori11a.pdf
+pdf: http://jmlr.org/proceedings/papers/v19/abbasi-yadkori11a/abbasi-yadkori11a.pdf
 layout: inproceedings
 id: abbasi-yadkori11a
 month: 0
 firstpage: 1
 lastpage: 26
 page: 1-26
-origpdf: http://jmlr.org/proceedings/papers/v19/abbasi-yadkori11a/abbasi-yadkori11a.pdf
 sections: 
 author:
 - given: Yasin
   family: Abbasi-Yadkori
 - given: Csaba
   family: Szepesvári
+reponame: v19
 date: 2011-12-21
 address: Budapest, Hungary
 publisher: PMLR

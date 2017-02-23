@@ -21,14 +21,13 @@ abstract: A large set of signals can sometimes be described sparsely using a dic
   in high dimensions in a strong probabilistic sense.Our results also include bounds
   that converge as 1/m, not previously known for this problem.We provide similar results
   in a general setting using kernels with weak smoothness requirements.
-pdf: http://proceedings.pmlr.press/vainsencher11a/vainsencher11a.pdf
+pdf: http://jmlr.org/proceedings/papers/v19/vainsencher11a/vainsencher11a.pdf
 layout: inproceedings
 id: vainsencher11a
 month: 0
 firstpage: 773
 lastpage: 788
 page: 773-788
-origpdf: http://jmlr.org/proceedings/papers/v19/vainsencher11a/vainsencher11a.pdf
 sections: 
 author:
 - given: Daniel
@@ -37,6 +36,7 @@ author:
   family: Mannor
 - given: Alfred M.
   family: Bruckstein
+reponame: v19
 date: 2011-12-21
 address: Budapest, Hungary
 publisher: PMLR
