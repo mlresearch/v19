@@ -5,7 +5,6 @@ booktitle: Proceedings of the 24th Annual Conference on Learning Theory
 publisher: JMLR Workshop and Conference Proceedings
 volume: 19
 month: 0
-address: Budapest, Hungary
 year: '2011'
 start: 2011-06-09
 end: 2011-06-11
@@ -18,16 +17,15 @@ sections:
   title: Accepted Papers
 layout: proceedings
 id: KakadeCOLT2011
-abstract: 
+abstract: ''
 origpdf: 
-pdf: "./KakadeCOLT2011/KakadeCOLT2011.pdf"
+pdf: http://proceedings.pmlr.press/KakadeCOLT2011/KakadeCOLT2011.pdf
 editor:
 - given: Sham M.
   family: Kakade
 - given: Ulrike
-  family: "{von Luxburg}"
+  family: von Luxburg
 title: Proceedings of the 24th Annual Conference on Learning Theory
-conference: Proceedings of the 24th Annual Conference on Learning Theory
 email: ''
 description: Proceedings of the 24th Annual Conference on Learning Theory, Budapest,
   Hungary
@@ -37,8 +35,17 @@ twitter_username: mlresearch
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
-gitub:
+github:
   edit: true
+  repository: v19
+conference:
+  name: 
+  url: 
+  location: Budapest, Hungary
+  dates:
+  - 2011-06-09
+  - 2011-06-10
+  - 2011-06-11
 analytics:
   google:
     tracking_id: UA-92432422-1

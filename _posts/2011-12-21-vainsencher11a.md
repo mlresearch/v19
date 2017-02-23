@@ -10,19 +10,18 @@ abstract: A large set of signals can sometimes be described sparsely using a dic
   fixed distribution, and study these questions from a statistical learning theory
   perspective. We develop generalization bounds on the quality of the learned dictionary
   for two types of constraints on the coefficient selection, as measured by the expected
-  $L_2$ error in representation when the dictionary is used.For the case of $l_1$
-  regularized coefficient selection we provide a generalization bound of the order
-  of $O\left(\sqrt{np\ln(m \lambda)/m}\right)$, where $n$ is the dimension, $p$ is
-  the number of elements in the dictionary, $\lambda$ is a bound on the $l_1$ norm
-  of the coefficient vector and $m$ is the number of samples, which complements existing
-  results.For the case of representing a new signal as a combination of at most $k$
-  dictionary elements, we provide a bound ofthe order $O(\sqrt{np\ln(m k)/m})$ under
-  an assumption on the closeness to orthogonality of the dictionary (low Babel function).We
-  further show that this assumption holds for {\em most} dictionaries in high dimensions
-  in a strong probabilistic sense.Our results also include bounds that converge as
-  $1/m$, not previously known for this problem.We provide similar results in a general
-  setting using kernels with weak smoothness requirements.
-pdf: "./vainsencher11a/vainsencher11a.pdf"
+  L_2 error in representation when the dictionary is used.For the case of l_1 regularized
+  coefficient selection we provide a generalization bound of the order of O\left(\sqrtnp\ln(m
+  λ)/m\right), where n is the dimension, p is the number of elements in the dictionary,
+  λis a bound on the l_1 norm of the coefficient vector and m is the number of samples,
+  which complements existing results.For the case of representing a new signal as
+  a combination of at most k dictionary elements, we provide a bound ofthe order O(\sqrtnp\ln(m
+  k)/m) under an assumption on the closeness to orthogonality of the dictionary (low
+  Babel function).We further show that this assumption holds for \em most dictionaries
+  in high dimensions in a strong probabilistic sense.Our results also include bounds
+  that converge as 1/m, not previously known for this problem.We provide similar results
+  in a general setting using kernels with weak smoothness requirements.
+pdf: http://proceedings.pmlr.press/vainsencher11a/vainsencher11a.pdf
 layout: inproceedings
 id: vainsencher11a
 month: 0
@@ -38,6 +37,15 @@ author:
   family: Mannor
 - given: Alfred M.
   family: Bruckstein
-date: '2011-12-21 00:12:53'
+date: 2011-12-21
 publisher: PMLR
+container-title: Proceedings of the 24th Annual Conference on Learning Theory
+volume: '19'
+genre: inproceedings
+issued:
+  date-parts:
+  - 2011
+  - 12
+  - 21
+# Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---
