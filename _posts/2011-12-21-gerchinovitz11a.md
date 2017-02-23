@@ -24,6 +24,7 @@ author:
 - given: Sébastien
   family: Gerchinovitz
 date: 2011-12-21
+address: Budapest, Hungary
 publisher: PMLR
 container-title: Proceedings of the 24th Annual Conference on Learning Theory
 volume: '19'

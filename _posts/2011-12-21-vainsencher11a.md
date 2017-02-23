@@ -38,6 +38,7 @@ author:
 - given: Alfred M.
   family: Bruckstein
 date: 2011-12-21
+address: Budapest, Hungary
 publisher: PMLR
 container-title: Proceedings of the 24th Annual Conference on Learning Theory
 volume: '19'
