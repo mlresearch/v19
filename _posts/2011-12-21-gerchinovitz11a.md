@@ -11,7 +11,7 @@ abstract: We consider the problem of online linear regression on arbitrary deter
   but which solve two questions left open therein. In particular our risk bounds are
   adaptive (up to a logarithmic factor) to the unknown variance of the noise if the
   latter is Gaussian.
-pdf: http://jmlr.org/proceedings/papers/v19/gerchinovitz11a/gerchinovitz11a.pdf
+pdf: http://proceedings.mlr.press/v19/gerchinovitz11a/gerchinovitz11a.pdf
 layout: inproceedings
 id: gerchinovitz11a
 month: 0
@@ -22,7 +22,6 @@ sections:
 author:
 - given: Sébastien
   family: Gerchinovitz
-reponame: v19
 date: 2011-12-21
 address: Budapest, Hungary
 publisher: PMLR
