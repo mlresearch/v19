@@ -23,6 +23,7 @@ abstract: A large set of signals can sometimes be described sparsely using a dic
   in a general setting using kernels with weak smoothness requirements.
 pdf: http://proceedings.mlr.press/v19/vainsencher11a/vainsencher11a.pdf
 layout: inproceedings
+series: Proceedings of Machine Learning Research
 id: vainsencher11a
 month: 0
 firstpage: 773

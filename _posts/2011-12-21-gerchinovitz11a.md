@@ -13,6 +13,7 @@ abstract: We consider the problem of online linear regression on arbitrary deter
   latter is Gaussian.
 pdf: http://proceedings.mlr.press/v19/gerchinovitz11a/gerchinovitz11a.pdf
 layout: inproceedings
+series: Proceedings of Machine Learning Research
 id: gerchinovitz11a
 month: 0
 firstpage: 377

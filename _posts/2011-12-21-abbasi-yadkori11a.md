@@ -13,6 +13,7 @@ abstract: We study the average cost Linear Quadratic (LQ) control problem with u
   optimal rate follows from the existing lower bounds for linear bandit problems.)
 pdf: http://proceedings.mlr.press/v19/abbasi-yadkori11a/abbasi-yadkori11a.pdf
 layout: inproceedings
+series: Proceedings of Machine Learning Research
 id: abbasi-yadkori11a
 month: 0
 firstpage: 1
