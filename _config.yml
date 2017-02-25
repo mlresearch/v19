@@ -26,7 +26,7 @@ editor:
   family: von Luxburg
 description: |
   Proceedings of the 24th Annual Conference on Learning Theory
-    Held in Budapest, Hungary on 9-11 June 2011
+    Held in Budapest, Hungary on 09-11 June 2011
 
   Published as Volume 19 by the Proceedings of Machine Learning Research on 21 December 2011.
 
@@ -36,7 +36,7 @@ description: |
 
   Series Editors:
     Neil D. Lawrence
-date_str: 9--11 Jun
+date_str: 09--11 Jun
 url: http://proceedings.mlr.press
 baseurl: "/v19"
 twitter_username: mlresearch
