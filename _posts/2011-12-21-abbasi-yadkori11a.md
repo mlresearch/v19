@@ -16,6 +16,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: abbasi-yadkori11a
 month: 0
+tex_title: Regret Bounds for the Adaptive Control of Linear Quadratic Systems
 firstpage: 1
 lastpage: 26
 page: 1-26

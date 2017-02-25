@@ -16,6 +16,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: gerchinovitz11a
 month: 0
+tex_title: Sparsity Regret Bounds for Individual Sequences in Online Linear Regression
 firstpage: 377
 lastpage: 396
 page: 377-396

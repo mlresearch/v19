@@ -17,12 +17,13 @@ layout: proceedings
 series: Proceedings of Machine Learning Research
 id: KakadeCOLT2011
 abstract: ''
+tex_title: 
+title: Proceedings of Machine Learning Research
 editor:
 - given: Sham M.
   family: Kakade
 - given: Ulrike
   family: von Luxburg
-title: Proceedings of Machine Learning Research
 description: |
   Proceedings of the 24th Annual Conference on Learning Theory
     Held in Budapest, Hungary on 9-11 June 2011

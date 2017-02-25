@@ -26,6 +26,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: vainsencher11a
 month: 0
+tex_title: The Sample Complexity of Dictionary Learning
 firstpage: 773
 lastpage: 788
 page: 773-788
