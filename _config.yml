@@ -36,6 +36,7 @@ description: |
 
   Series Editors:
     Neil D. Lawrence
+date_str: 9--11 Jun
 url: http://proceedings.mlr.press
 baseurl: "/v19"
 twitter_username: mlresearch
@@ -45,6 +46,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v19
+bibtex_copy: true
 email: ''
 conference:
   name: Proceedings of the 24th Annual Conference on Learning Theory
