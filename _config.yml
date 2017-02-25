@@ -22,10 +22,19 @@ editor:
   family: Kakade
 - given: Ulrike
   family: von Luxburg
-title: Proceedings of the 24th Annual Conference on Learning Theory
-email: ''
-description: Proceedings of the 24th Annual Conference on Learning Theory, Budapest,
-  Hungary
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of the 24th Annual Conference on Learning Theory
+    Held in Budapest, Hungary on 9-11 June 2011
+
+  Published as Volume 19 by the Proceedings of Machine Learning Research on 21 December 2011.
+
+  Volume Edited by:
+    Sham M. Kakade
+    Ulrike von Luxburg
+
+  Series Editors:
+    Neil D. Lawrence
 url: http://proceedings.mlr.press
 baseurl: "/v19"
 twitter_username: mlresearch
@@ -35,6 +44,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v19
+email: ''
 conference:
   name: Proceedings of the 24th Annual Conference on Learning Theory
   url: 
