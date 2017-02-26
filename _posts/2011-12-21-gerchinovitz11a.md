@@ -20,7 +20,8 @@ tex_title: Sparsity Regret Bounds for Individual Sequences in Online Linear Regr
 firstpage: 377
 lastpage: 396
 page: 377-396
-sections: 
+order: 377
+cycles: false
 author:
 - given: Sébastien
   family: Gerchinovitz

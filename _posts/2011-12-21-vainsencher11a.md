@@ -30,7 +30,8 @@ tex_title: The Sample Complexity of Dictionary Learning
 firstpage: 773
 lastpage: 788
 page: 773-788
-sections: 
+order: 773
+cycles: false
 author:
 - given: Daniel
   family: Vainsencher

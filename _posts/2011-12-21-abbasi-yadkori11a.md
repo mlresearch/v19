@@ -20,7 +20,8 @@ tex_title: Regret Bounds for the Adaptive Control of Linear Quadratic Systems
 firstpage: 1
 lastpage: 26
 page: 1-26
-sections: 
+order: 1
+cycles: false
 author:
 - given: Yasin
   family: Abbasi-Yadkori
