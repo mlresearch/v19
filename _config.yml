@@ -61,6 +61,7 @@ conference:
   - 2011-06-09
   - 2011-06-10
   - 2011-06-11
+  number: 24
 analytics:
   google:
     tracking_id: UA-92432422-1
