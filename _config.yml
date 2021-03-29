@@ -23,7 +23,8 @@ editor:
 - given: Sham M.
   family: Kakade
 - given: Ulrike
-  family: von Luxburg
+  prefix: von
+  family: Luxburg
 title: Proceedings of Machine Learning Research
 description: |
   Proceedings of the 24th Annual Conference on Learning Theory
